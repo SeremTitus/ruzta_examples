@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dda1dygpw1q5e"]
+
+[ext_resource type="Script" path="res://runtime/style/style.rz" id="1_txyc1"]
+
+[node name="style" type="Node" unique_id=2057072944]
+
+[node name="style" type="Node" parent="." unique_id=1006578955]
+script = ExtResource("1_txyc1")

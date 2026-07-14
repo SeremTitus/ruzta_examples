@@ -1,0 +1,19 @@
+extends Node
+
+var retries: int = 3
+var cooldown: float = 0.35
+var label: String = r"Ruzta"
+var enemy_name: StringName = &"Enemy"
+var camera_path: NodePath = ^"Player/Camera2D"
+var position_2d := Vector2(16, 32)
+
+func test() -> void:
+	prints("retries:", retries)
+	prints("cooldown:", cooldown)
+	prints("label:", label)
+	prints("enemy_name:", enemy_name)
+	prints("camera_path:", camera_path)
+	prints("position:", position_2d)
+
+func _ready() -> void:
+	test()

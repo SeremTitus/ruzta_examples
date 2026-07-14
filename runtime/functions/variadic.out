@@ -1,0 +1,5 @@
+RZTEST_OK
+~~ WARNING at line 3: (SHADOWED_VARIABLE_BASE_CLASS) The local function parameter "name" is shadowing an already-declared property in the base class "Node".
+spawn 0 []
+damage 2 ["orc", 15]
+values [1, 2, 3]

@@ -1,0 +1,16 @@
+extends Node
+
+func describe(value: Variant) -> void:
+	if value is int:
+		print("int:", value)
+	elif value is String:
+		print("string:", value)
+
+	var amount := value as int
+
+func test() -> void:
+	describe(42)
+	describe("hello")
+
+func _ready() -> void:
+	test()

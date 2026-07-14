@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bysgqrk6gq8pm"]
+
+[ext_resource type="Script" path="res://runtime/signals/typed_signals.rz" id="1_k5o3l"]
+[ext_resource type="Script" path="res://runtime/signals/signals.rz" id="2_bfdmb"]
+[ext_resource type="Script" path="res://runtime/signals/await.rz" id="3_2r5x3"]
+
+[node name="signals" type="Node" unique_id=815108217]
+
+[node name="typed_signals" type="Node" parent="." unique_id=1104087051]
+script = ExtResource("1_k5o3l")
+
+[node name="signals" type="Node" parent="." unique_id=698215418]
+script = ExtResource("2_bfdmb")
+
+[node name="await" type="Node" parent="." unique_id=1351173719]
+script = ExtResource("3_2r5x3")

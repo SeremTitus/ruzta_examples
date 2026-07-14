@@ -1,0 +1,5 @@
+RZTEST_OK
+preview move 4 9
+move 4 9
+write
+quit

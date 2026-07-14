@@ -1,0 +1,20 @@
+extends Node
+
+enum State { IDLE, RUN, HIT, DOWN }
+
+func set_state(state: State) -> void:
+	match state:
+		State.IDLE:
+			print("idle")
+		State.RUN:
+			print("run")
+		_:
+			print("other")
+
+func test() -> void:
+	set_state(State.IDLE)
+	set_state(State.RUN)
+	set_state(State.DOWN)
+
+func _ready() -> void:
+	test()

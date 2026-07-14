@@ -1,0 +1,16 @@
+extends Node
+
+func test() -> void:
+	var target: Variant = Node2D.new()
+	if target is Node2D:
+		print(target.position)
+
+	var named_target := target as Node
+	prints("cast:", named_target.get_class())
+
+	var abilities := ["dash", "jump"]
+	if "dash" in abilities:
+		print("dash ready")
+
+func _ready() -> void:
+	test()

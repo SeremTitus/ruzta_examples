@@ -1,0 +1,5 @@
+RZTEST_OK
+~~ WARNING at line 8: (UNSAFE_CALL_ARGUMENT) The argument 1 of the function "add_child()" requires the subtype "Node" but the supertype "Variant" was provided.
+~~ WARNING at line 10: (UNSAFE_CALL_ARGUMENT) The argument 1 of the function "add_child()" requires the subtype "Node" but the supertype "Variant" was provided.
+Singleton usage example (requires adding script to autoload)
+ok

@@ -1,0 +1,5 @@
+RZTEST_OK
+~~ WARNING at line 9: (UNSAFE_CAST) Casting "Variant" to "int" is unsafe.
+~~ WARNING at line 9: (UNUSED_VARIABLE) The local variable "amount" is declared but never used in the block. If this is intended, prefix it with an underscore: "_amount".
+int:42
+string:hello

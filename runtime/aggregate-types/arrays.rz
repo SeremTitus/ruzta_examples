@@ -1,0 +1,12 @@
+extends Node
+
+var checkpoints: Array[Vector2] = [Vector2.ZERO, Vector2(64, 0)]
+
+func test() -> void:
+	checkpoints.append(Vector2(128, 0))
+
+	for point in checkpoints:
+		print(point)
+
+func _ready() -> void:
+	test()

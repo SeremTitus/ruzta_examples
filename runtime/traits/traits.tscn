@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bjfbaopbfvv1s"]
+
+[ext_resource type="Script" path="res://runtime/traits/using_traits.rz" id="1_a40hy"]
+[ext_resource type="Script" path="res://runtime/traits/trait_typed_apis.rz" id="2_5kfya"]
+[ext_resource type="Script" path="res://runtime/traits/trait_test_cast.rz" id="3_citcx"]
+[ext_resource type="Script" path="res://runtime/traits/trait_overrides.rz" id="4_q86o2"]
+[ext_resource type="Script" path="res://runtime/traits/global_trait_uses.rz" id="5_i8rxo"]
+[ext_resource type="Script" path="res://runtime/traits/declaring_traits.rz" id="6_r2r06"]
+
+[node name="traits" type="Node" unique_id=229032159]
+
+[node name="using_traits" type="Node" parent="." unique_id=835043391]
+script = ExtResource("1_a40hy")
+
+[node name="trait_typed_apis" type="Node" parent="." unique_id=1892801098]
+script = ExtResource("2_5kfya")
+
+[node name="trait_test_cast" type="Node" parent="." unique_id=717113955]
+script = ExtResource("3_citcx")
+
+[node name="trait_overrides" type="Node" parent="." unique_id=1521294217]
+script = ExtResource("4_q86o2")
+
+[node name="global_trait_uses" type="Node" parent="." unique_id=1878558519]
+script = ExtResource("5_i8rxo")
+
+[node name="declaring_traits" type="Node" parent="." unique_id=573971582]
+script = ExtResource("6_r2r06")

@@ -1,0 +1,7 @@
+RZTEST_OK
+retries: 3
+cooldown: 0.35
+label: Ruzta
+enemy_name: Enemy
+camera_path: Player/Camera2D
+position: (16.0, 32.0)

@@ -1,0 +1,19 @@
+extends Node
+
+signal announced(value: int, ignored: String)
+
+func test() -> void:
+	var handler: Callable = func(value: int) -> void:
+		print("lambda:", value)
+
+	announced.connect(handler.unbind(1))
+	announced.connect(_on_tagged.bind("ui"))
+
+	var forwarded := Signal(self, "announced")
+	forwarded.emit(3, "drop")
+
+func _ready() -> void:
+	test()
+
+func _on_tagged(value: int, _ignored: String, tag: String) -> void:
+	print(tag, value)

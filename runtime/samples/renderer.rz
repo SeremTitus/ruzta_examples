@@ -1,0 +1,20 @@
+extends Node
+
+@feature("vulkan") # does not exist in os.features, manualy add in export
+var enable_raytracing := true
+
+@feature("vulkan")
+func init_raytracing() -> void:
+	print("raytracing enabled")
+
+@feature_any("vulkan", "metal")
+var tlas_handle: RID
+
+@feature_any("web", "mobile")
+var texture_atlas: Texture2D
+
+func test() -> void:
+	print("ok")
+
+func _ready() -> void:
+	pass

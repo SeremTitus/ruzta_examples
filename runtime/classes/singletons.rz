@@ -1,0 +1,7 @@
+extends Node
+
+func test() -> void:
+	print("Singleton usage example (requires adding script to autoload)")
+
+func _ready() -> void:
+	print("Singleton started")

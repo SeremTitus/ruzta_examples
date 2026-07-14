@@ -1,0 +1,16 @@
+extends Node
+
+const DEFAULT_SPEED := 240.0
+
+var health := 5
+var title: String = "Scout"
+var active := true
+
+func test() -> void:
+	prints("speed:", DEFAULT_SPEED)
+	prints("health:", health)
+	prints("title:", title)
+	prints("active:", active)
+
+func _ready() -> void:
+	test()

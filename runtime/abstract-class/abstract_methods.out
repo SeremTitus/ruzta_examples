@@ -1,0 +1,4 @@
+RZTEST_OK
+~~ WARNING at line 19: (UNSAFE_CALL_ARGUMENT) The argument 1 of the function "attack()" requires the subtype "Node" but the supertype "Variant" was provided.
+You cannot win.
+Slime bash -> se

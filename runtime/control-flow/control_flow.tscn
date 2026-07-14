@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://csylhuerfd5qj"]
+
+[ext_resource type="Script" path="res://runtime/control-flow/match.rz" id="1_wybqj"]
+[ext_resource type="Script" path="res://runtime/control-flow/loops.rz" id="2_iyeax"]
+[ext_resource type="Script" path="res://runtime/control-flow/conditionals.rz" id="3_ym6oy"]
+
+[node name="control-flow" type="Node" unique_id=1889968675]
+
+[node name="match" type="Node" parent="." unique_id=2044458183]
+script = ExtResource("1_wybqj")
+
+[node name="loops" type="Node" parent="." unique_id=1202248202]
+script = ExtResource("2_iyeax")
+
+[node name="conditionals" type="Node" parent="." unique_id=274984440]
+script = ExtResource("3_ym6oy")

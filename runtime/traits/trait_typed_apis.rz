@@ -1,0 +1,20 @@
+extends Node
+
+trait Command:
+	func run() -> void
+
+signal queued(command: Command)
+
+var current: Command
+var history: Array[Command] = []
+var named: Dictionary[String, Command] = {}
+
+func submit(command: Command) -> Command:
+	queued.emit(command)
+	history.append(command)
+	named["last"] = command
+	current = command
+	return command
+
+func test() -> void:
+	print("ok")

@@ -1,0 +1,14 @@
+extends Node
+
+signal collected(item_name, amount)
+
+func test() -> void:
+	pickup.call_deferred("coin", 3)
+	var payload = await collected
+	print(payload)
+
+func _ready() -> void:
+	test()
+
+func pickup(item_name: String, amount: int) -> void:
+	collected.emit(item_name, amount)

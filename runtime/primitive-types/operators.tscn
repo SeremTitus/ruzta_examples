@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://biyyaxknv51kg"]
+
+[ext_resource type="Script" path="res://runtime/operators/type_ops.rz" id="1_ph50n"]
+[ext_resource type="Script" path="res://runtime/operators/range_syntax.rz" id="2_ad6nx"]
+[ext_resource type="Script" path="res://runtime/operators/operators.rz" id="3_k5d31"]
+
+[node name="operators" type="Node" unique_id=1109274485]
+
+[node name="type_ops" type="Node" parent="." unique_id=734735143]
+script = ExtResource("1_ph50n")
+
+[node name="range_syntax" type="Node" parent="." unique_id=597330242]
+script = ExtResource("2_ad6nx")
+
+[node name="operators" type="Node" parent="." unique_id=38190406]
+script = ExtResource("3_k5d31")

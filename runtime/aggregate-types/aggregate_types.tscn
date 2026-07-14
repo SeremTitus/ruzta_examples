@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bgh1mbbngn0mk"]
+
+[ext_resource type="Script" path="res://runtime/aggregate-types/tuples.rz" id="1_maylk"]
+[ext_resource type="Script" path="res://runtime/aggregate-types/dictionary.rz" id="2_7kp2m"]
+[ext_resource type="Script" path="res://runtime/aggregate-types/arrays.rz" id="3_ekgkg"]
+
+[node name="aggregate-types" type="Node" unique_id=324129213]
+
+[node name="tuples" type="Node" parent="." unique_id=123212108]
+script = ExtResource("1_maylk")
+
+[node name="dictionary" type="Node" parent="." unique_id=585878697]
+script = ExtResource("2_7kp2m")
+
+[node name="arrays" type="Node" parent="." unique_id=1416215635]
+script = ExtResource("3_ekgkg")

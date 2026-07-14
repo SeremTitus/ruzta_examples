@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cspl6nj2mv6f0"]
+
+[ext_resource type="Script" path="res://runtime/annotations/warning_ignore.rz" id="1_12veq"]
+[ext_resource type="Script" path="res://runtime/annotations/scoped_annotations.rz" id="2_qw50j"]
+[ext_resource type="Script" path="res://runtime/annotations/feature_annotation.rz" id="3_hvktb"]
+[ext_resource type="Script" path="res://runtime/annotations/annotations.rz" id="4_yhyfa"]
+
+[node name="annotations" type="Node" unique_id=1544561658]
+
+[node name="warning_ignore" type="Node" parent="." unique_id=1564200228]
+script = ExtResource("1_12veq")
+
+[node name="scoped_annotations" type="Node" parent="." unique_id=1845705447]
+script = ExtResource("2_qw50j")
+
+[node name="feature_annotation" type="Node" parent="." unique_id=1277883494]
+script = ExtResource("3_hvktb")
+
+[node name="annotations" type="Node" parent="." unique_id=1806647333]
+script = ExtResource("4_yhyfa")

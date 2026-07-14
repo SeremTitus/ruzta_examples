@@ -1,0 +1,4 @@
+RZTEST_OK
+~~ WARNING at line 3: (SHADOWED_VARIABLE_BASE_CLASS) The local function parameter "name" is shadowing an already-declared property in the base class "Node".
+Xkai22true
+Blue19false

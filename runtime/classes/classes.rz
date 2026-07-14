@@ -1,0 +1,18 @@
+class_name Projectile
+extends Node
+
+const EnemyScript = preload("res://runtime/classes/enemy_stub.rz")
+
+func spawn_enemy() -> void:
+	var enemy = EnemyScript.new()
+	add_child(enemy)
+	var enemy2 = EnemyStub.new()
+	add_child(enemy2)
+
+func test() -> void:
+	spawn_enemy()
+	Singletons.test()
+	print("ok")
+
+func _ready() -> void:
+	test()

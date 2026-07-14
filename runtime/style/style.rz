@@ -1,0 +1,17 @@
+extends Node
+
+const MAX_SPEED = 400.0
+
+@export var move_speed := 220.0
+
+func apply_damage(amount: int) -> void:
+	if amount <= 0:
+		return
+
+	prints("damage applied:", amount)
+
+func test() -> void:
+	apply_damage(10)
+
+func _ready() -> void:
+	test()

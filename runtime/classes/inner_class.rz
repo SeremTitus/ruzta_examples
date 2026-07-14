@@ -1,0 +1,23 @@
+extends Node
+
+func make_entry(id: String, count: int) -> Entry:
+	var entry := Entry.new()
+	entry.id = id
+	entry.count = count
+	return entry
+
+func test() -> void:
+	var e := make_entry("a", 1)
+	prints(e.id, e.count)
+	var e2 := Entry{ 
+		id = "b"
+		count = 9
+	}
+	prints(e2.id, e2.count)
+
+func _ready() -> void:
+	test()
+
+class Entry:
+	var id: String
+	var count: int

@@ -1,0 +1,4 @@
+trait_name ActorTrait extends Node
+
+func actor_name() -> String:
+	return name

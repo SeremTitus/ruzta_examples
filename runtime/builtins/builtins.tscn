@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dulpu5ddmg5nh"]
+
+[ext_resource type="Script" path="res://runtime/builtins/builtins_runtime.rz" id="1_4t21v"]
+[ext_resource type="Script" path="res://runtime/builtins/builtins_everyday.rz" id="2_tx51a"]
+
+[node name="builtins" type="Node" unique_id=580348421]
+
+[node name="builtins_runtime" type="Node" parent="." unique_id=848302634]
+script = ExtResource("1_4t21v")
+
+[node name="builtins_everyday" type="Node" parent="." unique_id=503451549]
+script = ExtResource("2_tx51a")

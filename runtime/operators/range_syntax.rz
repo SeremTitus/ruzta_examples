@@ -1,0 +1,12 @@
+extends Node
+
+func test() -> void:
+	print(0..10)
+	print(0..=10)
+	print(0..10:2)
+	print(10..0)
+	print(10..=0)
+	print(0..2 + [3, 4])
+
+func _ready() -> void:
+	test()

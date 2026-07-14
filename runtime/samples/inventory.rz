@@ -1,0 +1,17 @@
+extends Node
+
+var coins: int = 0
+var items: Array[String] = []
+
+func add_item(name: String) -> void:
+	items.append(name)
+	coins += 1
+	print(name + " added")
+
+func test() -> void:
+	add_item("sword")
+	add_item("shield")
+	prints("coins:", coins)
+
+func _ready() -> void:
+	test()

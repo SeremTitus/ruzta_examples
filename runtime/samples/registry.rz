@@ -1,0 +1,20 @@
+extends Node
+
+@generic(T)
+class Stack:
+	var items: Array[T] = []
+
+	func push(item: T) -> void:
+		print(item is T)
+		items.append(item)
+
+	func pop() -> T:
+		return items.pop_back()
+
+func test() -> void:
+	var ints := Stack<int>.new()
+	ints.push(42)
+	print(ints.pop())
+
+func _ready() -> void:
+	test()

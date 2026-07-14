@@ -1,0 +1,22 @@
+extends Node
+
+@generic(T)
+func get_component()-> T:
+	for child in get_children():
+		if child is T: return child
+	return null
+
+
+@generic(T:Node)
+func child_as(parent: Node, idx: int) -> T:
+	return parent.get_child(idx, true) as T
+
+func test() -> void:
+	print(get_component<GraphElement>() != null)
+	print(get_component<Node>() != null)
+	print(get_component<Node2D>() != null)
+	print(child_as<Node3D>(self.get_parent(), 1) != null)
+
+
+func _ready() -> void:
+	test()

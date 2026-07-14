@@ -1,0 +1,24 @@
+extends Node
+
+var score := 0
+var ammo := 5
+var combo := 0
+var stamina := 10
+var exhausted := false
+var lane_a := 1
+var lane_b := 1
+var turn := 5
+
+func test() -> void:
+	score += 10
+	ammo--
+	combo++
+
+	var can_dash = stamina > 0 and not exhausted
+	var same_lane = lane_a == lane_b
+	var wrapped = turn % 4
+	prints("score:", score, "ammo:", ammo, "combo:", combo)
+	prints("can_dash:", can_dash, "same_lane:", same_lane, "wrapped:", wrapped)
+
+func _ready() -> void:
+	test()

@@ -1,0 +1,19 @@
+extends Node
+
+var health := 5
+var sprinting := false
+var state := "idle"
+
+func test() -> void:
+	if health <= 0:
+		state = "down"
+	elif sprinting:
+		state = "run"
+	else:
+		state = "idle"
+
+	var banner = "danger" if health < 3 else "safe"
+	prints("state:", state, "banner:", banner)
+
+func _ready() -> void:
+	test()

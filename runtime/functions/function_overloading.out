@@ -1,0 +1,9 @@
+RZTEST_OK
+~~ WARNING at line 10: (UNUSED_PARAMETER) The parameter "value" is never used in the function "pick()". If this is intended, prefix it with an underscore: "_value".
+~~ WARNING at line 13: (UNUSED_PARAMETER) The parameter "value" is never used in the function "pick()". If this is intended, prefix it with an underscore: "_value".
+~~ WARNING at line 20: (UNUSED_VARIABLE) The local variable "a" is declared but never used in the block. If this is intended, prefix it with an underscore: "_a".
+~~ WARNING at line 21: (UNUSED_VARIABLE) The local variable "b" is declared but never used in the block. If this is intended, prefix it with an underscore: "_b".
+string init:x
+int init:3
+int
+string

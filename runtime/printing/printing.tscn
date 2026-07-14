@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://wmsveym3oglp"]
+
+[ext_resource type="Script" path="res://runtime/printing/printing.rz" id="1_qmt5q"]
+
+[node name="printing" type="Node" unique_id=1913026950]
+
+[node name="printing" type="Node" parent="." unique_id=2002863183]
+script = ExtResource("1_qmt5q")

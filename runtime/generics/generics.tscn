@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dumptro3llllt"]
+
+[ext_resource type="Script" path="res://runtime/generics/generics.rz" id="1_fxl1d"]
+[ext_resource type="Script" path="res://runtime/generics/generics_check.rz" id="2_c6ghq"]
+
+[node name="generics" type="Node" unique_id=1426555641]
+
+[node name="generics" type="Node" parent="." unique_id=350698000]
+script = ExtResource("1_fxl1d")
+
+[node name="generics_check" type="Node" parent="." unique_id=1256645655]
+script = ExtResource("2_c6ghq")

@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bukh5v13yl2og"]
+
+[ext_resource type="PackedScene" uid="uid://b6brb4lveb5jn" path="res://runtime/abstract-class/abstract_class.tscn" id="1_82xsv"]
+[ext_resource type="PackedScene" uid="uid://bgh1mbbngn0mk" path="res://runtime/aggregate-types/aggregate_types.tscn" id="2_getpj"]
+[ext_resource type="PackedScene" uid="uid://cspl6nj2mv6f0" path="res://runtime/annotations/annotations.tscn" id="3_ryguw"]
+[ext_resource type="PackedScene" uid="uid://dulpu5ddmg5nh" path="res://runtime/builtins/builtins.tscn" id="4_d13ii"]
+[ext_resource type="PackedScene" uid="uid://cpqkuhk4ybf4p" path="res://runtime/classes/classes.tscn" id="5_1u8w0"]
+[ext_resource type="PackedScene" uid="uid://d1dipqwui21kv" path="res://runtime/constructors/constructors.tscn" id="6_0odxb"]
+[ext_resource type="PackedScene" uid="uid://csylhuerfd5qj" path="res://runtime/control-flow/control_flow.tscn" id="7_lswn8"]
+[ext_resource type="PackedScene" uid="uid://66f8uuprst8r" path="res://runtime/enums/enums.tscn" id="8_a6jrf"]
+[ext_resource type="PackedScene" uid="uid://cxxworqooh7om" path="res://runtime/functions/functions.tscn" id="9_xuqvo"]
+[ext_resource type="PackedScene" uid="uid://dumptro3llllt" path="res://runtime/generics/generics.tscn" id="10_qsp4k"]
+[ext_resource type="PackedScene" uid="uid://biyyaxknv51kg" path="res://runtime/primitive-types/operators.tscn" id="11_kq58d"]
+[ext_resource type="PackedScene" uid="uid://wmsveym3oglp" path="res://runtime/printing/printing.tscn" id="12_seu75"]
+[ext_resource type="PackedScene" uid="uid://bwxwmbkunkqbr" path="res://runtime/primitive-types/primitive_types.tscn" id="13_htxhm"]
+[ext_resource type="PackedScene" uid="uid://ccdow0ct3bof1" path="res://runtime/samples/samples.tscn" id="14_jq2sk"]
+[ext_resource type="PackedScene" uid="uid://dgewbjaren5ke" path="res://runtime/setup/setup.tscn" id="15_4k2k6"]
+[ext_resource type="PackedScene" uid="uid://bysgqrk6gq8pm" path="res://runtime/signals/signals.tscn" id="16_0rl1p"]
+[ext_resource type="PackedScene" uid="uid://dda1dygpw1q5e" path="res://runtime/style/style.tscn" id="17_ok6jj"]
+[ext_resource type="PackedScene" uid="uid://bjfbaopbfvv1s" path="res://runtime/traits/traits.tscn" id="18_facbu"]
+[ext_resource type="PackedScene" uid="uid://4tvvlseglrrv" path="res://runtime/variables/variables.tscn" id="19_b1qrp"]
+[ext_resource type="PackedScene" uid="uid://c7ilbjletq3fs" path="res://runtime/vs-gdscript/vs_gdscript.tscn" id="20_come4"]
+
+[node name="main" type="Node" unique_id=2110693101]
+
+[node name="abstract-class" parent="." unique_id=1548813319 instance=ExtResource("1_82xsv")]
+
+[node name="aggregate-types" parent="." unique_id=324129213 instance=ExtResource("2_getpj")]
+
+[node name="annotations" parent="." unique_id=1544561658 instance=ExtResource("3_ryguw")]
+
+[node name="builtins" parent="." unique_id=580348421 instance=ExtResource("4_d13ii")]
+
+[node name="classes" parent="." unique_id=709542653 instance=ExtResource("5_1u8w0")]
+
+[node name="constructors" parent="." unique_id=2038124431 instance=ExtResource("6_0odxb")]
+
+[node name="control-flow" parent="." unique_id=1889968675 instance=ExtResource("7_lswn8")]
+
+[node name="enums" parent="." unique_id=966540210 instance=ExtResource("8_a6jrf")]
+
+[node name="functions" parent="." unique_id=434731587 instance=ExtResource("9_xuqvo")]
+
+[node name="generics" parent="." unique_id=1426555641 instance=ExtResource("10_qsp4k")]
+
+[node name="operators" parent="." unique_id=1109274485 instance=ExtResource("11_kq58d")]
+
+[node name="printing" parent="." unique_id=1913026950 instance=ExtResource("12_seu75")]
+
+[node name="primitive-types" parent="." unique_id=1435599334 instance=ExtResource("13_htxhm")]
+
+[node name="samples" parent="." unique_id=1253187182 instance=ExtResource("14_jq2sk")]
+
+[node name="setup" parent="." unique_id=943669157 instance=ExtResource("15_4k2k6")]
+
+[node name="signals" parent="." unique_id=815108217 instance=ExtResource("16_0rl1p")]
+
+[node name="style" parent="." unique_id=2057072944 instance=ExtResource("17_ok6jj")]
+
+[node name="traits" parent="." unique_id=229032159 instance=ExtResource("18_facbu")]
+
+[node name="variables" parent="." unique_id=2091715116 instance=ExtResource("19_b1qrp")]
+
+[node name="vs-gdscript" parent="." unique_id=195466407 instance=ExtResource("20_come4")]
+
+[editable path="abstract-class"]
+[editable path="aggregate-types"]
+[editable path="annotations"]
+[editable path="builtins"]
+[editable path="classes"]
+[editable path="constructors"]
+[editable path="control-flow"]
+[editable path="enums"]
+[editable path="functions"]
+[editable path="generics"]
+[editable path="operators"]
+[editable path="printing"]
+[editable path="primitive-types"]
+[editable path="samples"]
+[editable path="setup"]
+[editable path="signals"]
+[editable path="style"]
+[editable path="traits"]
+[editable path="variables"]
+[editable path="vs-gdscript"]

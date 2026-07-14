@@ -1,0 +1,19 @@
+extends Node
+
+var player_name := "Hero"
+var health := 80
+var max_health := 100
+var elapsed := 12.5
+
+func test() -> void:
+	print("ready:", player_name)
+	prints("spawn", 1, Vector2.ZERO)
+	printerr("Missing save file")
+
+	var hp_label = "HP %02d / %03d" % [health, max_health]
+	var time_label = "Time %.02f" % elapsed
+	print(hp_label)
+	print(time_label)
+
+func _ready() -> void:
+	test()

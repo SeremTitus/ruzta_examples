@@ -1,0 +1,4 @@
+RZTEST_OK
+~~ WARNING at line 3: (UNUSED_PARAMETER) The parameter "show_debug" is never used in the function "make_pause_menu()". If this is intended, prefix it with an underscore: "_show_debug".
+~~ WARNING at line 13: (UNSAFE_METHOD_ACCESS) The method "size()" is not present on the inferred type "Variant" (but may be present on a subtype).
+menu children: 5

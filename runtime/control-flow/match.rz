@@ -1,0 +1,17 @@
+
+extends Node
+
+func test() -> void:
+	var state := "run"
+	match state:
+		"idle":
+			print("standing")
+		"run":
+			print("moving")
+		var current when current.begins_with("attack"):
+			print("combat")
+		_:
+			print("unknown")
+
+func _ready() -> void:
+	test()

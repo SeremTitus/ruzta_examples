@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://ccdow0ct3bof1"]
+
+[ext_resource type="Script" path="res://runtime/samples/state_machine.rz" id="1_da37d"]
+[ext_resource type="Script" path="res://runtime/samples/renderer.rz" id="2_bhinx"]
+[ext_resource type="Script" path="res://runtime/samples/registry.rz" id="3_1jlm6"]
+[ext_resource type="Script" path="res://runtime/samples/range_syntax_sample.rz" id="4_lirmn"]
+[ext_resource type="Script" path="res://runtime/samples/player_stats.rz" id="5_sd4yk"]
+[ext_resource type="Script" path="res://runtime/samples/pickup_flow.rz" id="6_bi1fc"]
+[ext_resource type="Script" path="res://runtime/samples/pause_menu.rz" id="7_f7c8e"]
+[ext_resource type="Script" path="res://runtime/samples/named_arguments_sample.rz" id="8_coa3g"]
+[ext_resource type="Script" path="res://runtime/samples/message_bus.rz" id="9_f8r0i"]
+[ext_resource type="Script" path="res://runtime/samples/inventory.rz" id="10_oksxb"]
+[ext_resource type="Script" path="res://runtime/samples/combat_roles.rz" id="11_o15l8"]
+
+[node name="samples" type="Node" unique_id=1253187182]
+
+[node name="state_machine" type="Node" parent="." unique_id=1913731426]
+script = ExtResource("1_da37d")
+
+[node name="renderer" type="Node" parent="." unique_id=872388785]
+script = ExtResource("2_bhinx")
+
+[node name="registry" type="Node" parent="." unique_id=377168811]
+script = ExtResource("3_1jlm6")
+
+[node name="range_syntax_sample" type="Node" parent="." unique_id=663866230]
+script = ExtResource("4_lirmn")
+
+[node name="player_stats" type="Node" parent="." unique_id=1723444245]
+script = ExtResource("5_sd4yk")
+
+[node name="pickup_flow" type="Node" parent="." unique_id=1830011180]
+script = ExtResource("6_bi1fc")
+
+[node name="pause_menu" type="Node" parent="." unique_id=281297653]
+script = ExtResource("7_f7c8e")
+
+[node name="named_arguments_sample" type="Node" parent="." unique_id=986975908]
+script = ExtResource("8_coa3g")
+
+[node name="message_bus" type="Node" parent="." unique_id=810206561]
+script = ExtResource("9_f8r0i")
+
+[node name="inventory" type="Node" parent="." unique_id=727231004]
+script = ExtResource("10_oksxb")
+
+[node name="combat_roles" type="Node" parent="." unique_id=1079624432]
+script = ExtResource("11_o15l8")

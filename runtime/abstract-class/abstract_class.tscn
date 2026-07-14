@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b6brb4lveb5jn"]
+
+[ext_resource type="Script" path="res://runtime/abstract-class/abstract_class.rz" id="1_c6j20"]
+[ext_resource type="Script" path="res://runtime/abstract-class/abstract_methods.rz" id="2_81mpt"]
+
+[node name="abstract-class" type="Node" unique_id=1548813319]
+
+[node name="abstract_class" type="Node" parent="." unique_id=1094107079]
+script = ExtResource("1_c6j20")
+
+[node name="abstract_methods" type="Node" parent="." unique_id=1670098649]
+script = ExtResource("2_81mpt")

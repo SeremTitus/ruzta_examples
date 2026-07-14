@@ -1,0 +1,5 @@
+RZTEST_OK
+~~ WARNING at line 4: (ASSERT_ALWAYS_TRUE) Assert statement is redundant because the expression is always true.
+3
+A
+65

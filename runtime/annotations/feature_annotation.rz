@@ -1,0 +1,18 @@
+extends Node
+
+@feature("windows")
+var windows_only = "win"
+
+@feature_any("web_android", "web_ios")
+var mobile_web = true
+
+func test() -> void:
+	@feature("windows", "editor"):
+		print(windows_only)
+
+	@feature("editor")
+	@feature_any("windows", "linux"):
+		print("Editor helper for desktop platforms.")
+
+	@feature("web"):
+		print("Only present when the web feature exists.")

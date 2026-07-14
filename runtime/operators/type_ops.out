@@ -1,0 +1,5 @@
+RZTEST_OK
+~~ WARNING at line 8: (UNSAFE_CAST) Casting "Variant" to "Node" is unsafe.
+(0.0, 0.0)
+cast: Node2D
+dash ready

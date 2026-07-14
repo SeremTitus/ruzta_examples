@@ -1,0 +1,15 @@
+extends Node
+
+@export var stats: Dictionary[String, int] = {
+	"hp": 8,
+	"mp": 3,
+}
+
+func test() -> void:
+	stats["hp"] += 1
+
+	for key: String in stats:
+		print("%s = %d" % [key, stats[key]])
+
+func _ready() -> void:
+	test()

@@ -1,0 +1,13 @@
+extends Node
+
+trait Damageable:
+	signal damaged(amount: int)
+	const HIT_FLASH_TIME := 0.08
+
+	func apply_damage(amount: int) -> void
+
+	func report_damage(amount: int) -> void:
+		damaged.emit(amount)
+
+func test() -> void:
+	print("ok")

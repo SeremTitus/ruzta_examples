@@ -1,0 +1,9 @@
+#@tool
+extends Node
+
+@export_group("Movement")
+@export var speed := 240.0
+@export var jump_force := 420
+
+func test() -> void:
+	print("ok")

@@ -1,0 +1,17 @@
+extends Node
+
+var energy := 3
+
+func test() -> void:
+	for index in 0..=3:
+		print(index)
+
+	for action in ["jump", "dash", "roll"]:
+		print(action)
+
+	while energy > 0:
+		energy -= 1
+	prints("energy:", energy)
+
+func _ready() -> void:
+	test()

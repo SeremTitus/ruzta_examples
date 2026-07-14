@@ -1,0 +1,24 @@
+extends Node
+
+enum Message {
+	Quit,
+	Move(x: int, y: int),
+	Write(text: String),
+}
+
+func handle(msg: Message) -> void:
+	match msg:
+		Message.Quit:
+			print("quit")
+		Message.Move(x, y):
+			prints("move", x, y)
+		Message.Write(_):
+			print("write")
+
+func test() -> void:
+	handle(Message.Move(x: 1, y: 2))
+	handle(Message.Write(text: "hi"))
+	handle(Message.Quit)
+
+func _ready() -> void:
+	test()

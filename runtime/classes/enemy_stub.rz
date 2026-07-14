@@ -1,0 +1,5 @@
+class_name EnemyStub
+extends Node
+
+func test() -> void:
+	print("ok")

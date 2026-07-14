@@ -1,0 +1,23 @@
+extends Node
+
+trait Damageable:
+	signal damaged(amount: int)
+	func apply_damage(amount: int) -> void
+
+class Crate:
+	uses Damageable
+
+	var hp: int = 3
+
+	func apply_damage(amount: int) -> void:
+		hp -= amount
+		damaged.emit(amount)
+
+func test() -> void:
+	var crate := Crate.new()
+	crate.damaged.connect(func(amount: int): print("damaged:", amount))
+	crate.apply_damage(1)
+	prints("crate hp:", crate.hp)
+
+func _ready() -> void:
+	test()

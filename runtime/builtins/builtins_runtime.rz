@@ -1,0 +1,9 @@
+extends Node
+
+func test() -> void:
+	var node := Node2D.new()
+	print(is_instance_of(node, TYPE_OBJECT))
+	node.free()
+
+func _ready() -> void:
+	test()

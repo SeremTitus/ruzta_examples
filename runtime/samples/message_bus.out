@@ -1,0 +1,4 @@
+RZTEST_OK
+move 1 2
+write
+quit

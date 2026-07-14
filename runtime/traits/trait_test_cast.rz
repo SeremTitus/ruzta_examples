@@ -1,0 +1,17 @@
+extends Node
+
+trait Lootable:
+	func collect() -> void
+
+func try_collect(target: Variant) -> void:
+	if target is Lootable:
+		var lootable = target as Lootable
+		lootable.collect()
+	else:
+		print("Nothing to collect")
+
+func test() -> void:
+	try_collect(null)
+
+func _ready() -> void:
+	test()

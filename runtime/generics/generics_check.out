@@ -1,0 +1,6 @@
+RZTEST_RUNTIME_ERROR
+false
+false
+false
+>> SCRIPT ERROR at runtime/generics/generics_check.rz:12 on child_as(): Cannot call method 'get_child' on a null value.
+false

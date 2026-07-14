@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c7ilbjletq3fs"]
+
+[ext_resource type="Script" path="res://runtime/vs-gdscript/simple.rz" id="1_job8o"]
+
+[node name="vs-gdscript" type="Node" unique_id=195466407]
+
+[node name="shared_shape" type="Node" parent="." unique_id=217965303]
+script = ExtResource("1_job8o")

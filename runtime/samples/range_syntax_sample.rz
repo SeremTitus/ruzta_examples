@@ -1,0 +1,19 @@
+extends Node
+
+func tick(values: Array[int]) -> void:
+	var frame = 0
+	frame++
+	values[0]--
+
+	for i in 0..=6:2:
+		print(i)
+
+	print(10..=0)
+	print(frame)
+	print(values[0])
+
+func test() -> void:
+	tick([10, 20, 30])
+
+func _ready() -> void:
+	test()

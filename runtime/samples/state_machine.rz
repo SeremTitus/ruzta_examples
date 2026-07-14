@@ -1,0 +1,18 @@
+extends Node
+
+func describe_state(state) -> String:
+	match state:
+		"idle":
+			return "Standing still"
+		"run":
+			return "Moving fast"
+		_:
+			return "Unknown"
+
+func test() -> void:
+	print(describe_state("idle"))
+	print(describe_state("run"))
+	print(describe_state("attack"))
+
+func _ready() -> void:
+	test()

@@ -1,0 +1,9 @@
+extends Node
+
+@warning_ignore("unused_parameter")
+func _process(_delta: float) -> void:
+	pass
+
+func test() -> void:
+	_process(0)
+	print("ok")

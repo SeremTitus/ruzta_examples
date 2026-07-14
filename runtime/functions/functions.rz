@@ -1,0 +1,18 @@
+extends Node
+
+var health := 10
+
+func heal(amount: int = 1) -> void:
+	health += amount
+	
+	
+func is_alive() -> bool:
+	return health > 0
+
+func test() -> void:
+	prints("alive:", is_alive())
+	heal(5)
+	prints("after heal:", health)
+
+func _ready() -> void:
+	test()

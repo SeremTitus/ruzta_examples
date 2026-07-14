@@ -1,0 +1,20 @@
+extends Node
+
+func make_pause_menu() -> VBoxContainer:
+	return VBoxContainer {
+		name = "PauseMenu"
+		Label {
+			text = "Paused"
+		}
+		Button {
+			text = "Resume"
+		}
+	}
+
+func test() -> void:
+	var menu := make_pause_menu()
+	add_child(menu)
+	prints("menu:", menu.name, "children:", menu.get_child_count())
+
+func _ready() -> void:
+	test()

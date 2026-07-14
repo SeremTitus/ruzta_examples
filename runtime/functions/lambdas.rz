@@ -1,0 +1,14 @@
+extends Node
+
+var announce := func(message: String) -> void:
+	print("announce:", message)
+
+var double := func(value: int) -> int:
+	return value * 2
+
+func test() -> void:
+	announce.call("ready")
+	print(double.call(4))
+
+func _ready() -> void:
+	test()

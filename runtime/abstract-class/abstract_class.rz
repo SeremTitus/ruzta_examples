@@ -1,0 +1,21 @@
+extends Node
+
+@abstract class Ability:
+	@abstract func activate(target: Node) -> void
+
+	func describe() -> String:
+		return "Shared ability contract"
+
+class Fireball extends Ability:
+	func activate(target: Node) -> void:
+		print("Fireball hits ", target.name)
+
+func cast(target: Node) -> void:
+	var spell := Fireball.new()
+	spell.activate(target)
+
+func test() -> void:
+	cast(Node2D.new())
+
+func _ready() -> void:
+	test()

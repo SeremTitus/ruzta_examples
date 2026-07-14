@@ -1,0 +1,34 @@
+extends Node
+
+func make_pause_menu(show_debug: bool, entries: Array[String]) -> VBoxContainer:
+	return VBoxContainer {
+		name = "PauseMenu"
+		alignment = BoxContainer.ALIGNMENT_CENTER
+
+		if show_debug:
+			name = "PauseMenuDebug"
+		else:
+			name = "PauseMenuRelease"
+
+		while get_child_count() < entries.size():
+			if get_child_count() >= 4:
+				break
+			Button {
+				text = entries[get_child_count()]
+			}
+
+		for label in ["Paused", "", "Resume"]:
+			if label == "":
+				continue
+			Button {
+				text = label
+			}
+	}
+
+func test() -> void:
+	var menu := make_pause_menu(true, ["A", "B", "C"])
+	add_child(menu)
+	prints("menu children:", menu.get_child_count())
+
+func _ready() -> void:
+	test()

@@ -1,0 +1,7 @@
+extends Node
+
+func test() -> void:
+	print("Hello from Ruzta")
+
+func _ready() -> void:
+	test()

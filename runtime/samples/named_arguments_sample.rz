@@ -1,0 +1,17 @@
+extends Node
+
+func create_user(name: String, age: int, admin: bool = false) -> void:
+	print(name, age, admin)
+
+func demo() -> void:
+	create_user("Xkai", admin: true, age: 22)
+	create_user(name: "Blue", age: 19)
+
+	var point := Vector2(y: 9, x: 4)
+	print(point)
+
+func test() -> void:
+	demo()
+
+func _ready() -> void:
+	test()

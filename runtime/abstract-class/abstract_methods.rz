@@ -1,0 +1,22 @@
+extends Node
+
+@abstract class Enemy:
+	@abstract func attack(target: Node) -> void
+
+@abstract class Boss extends Enemy:
+	func taunt() -> void:
+		print("You cannot win.")
+
+class SlimeBoss extends Boss:
+	func attack(target: Node) -> void:
+		print("Slime bash -> ", target.name)
+
+func test() -> void:
+	var boss := SlimeBoss.new()
+	boss.taunt()
+	var player = Node.new()
+	player.name = "se"
+	boss.attack(player)
+
+func _ready() -> void:
+	test()

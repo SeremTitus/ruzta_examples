@@ -1,0 +1,17 @@
+extends Node
+
+static var spawned_count := 0
+
+var nickname := "unit"
+
+func _init() -> void:
+	spawned_count += 1
+
+static func get_spawned_count() -> int:
+	return spawned_count
+
+func test() -> void:
+	prints("spawned:", get_spawned_count())
+
+func _ready() -> void:
+	test()

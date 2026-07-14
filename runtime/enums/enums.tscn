@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://66f8uuprst8r"]
+
+[ext_resource type="Script" path="res://runtime/enums/payload_enum.rz" id="1_3rp8m"]
+[ext_resource type="Script" path="res://runtime/enums/enum_usage.rz" id="2_eho70"]
+[ext_resource type="Script" path="res://runtime/enums/enums.rz" id="3_5stdm"]
+
+[node name="enums" type="Node" unique_id=966540210]
+
+[node name="payload_enum" type="Node" parent="." unique_id=2102956154]
+script = ExtResource("1_3rp8m")
+
+[node name="enum_usage" type="Node" parent="." unique_id=1520715653]
+script = ExtResource("2_eho70")
+
+[node name="enums" type="Node" parent="." unique_id=744429284]
+script = ExtResource("3_5stdm")

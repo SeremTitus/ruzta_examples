@@ -1,0 +1,14 @@
+extends Node
+
+enum Direction { LEFT = -1, RIGHT = 1 }
+enum { STARTING_LIVES = 3 }
+
+var facing: Direction = Direction.RIGHT
+var lives := STARTING_LIVES
+
+func test() -> void:
+	prints("facing:", facing)
+	prints("lives:", lives)
+
+func _ready() -> void:
+	test()

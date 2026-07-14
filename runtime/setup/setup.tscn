@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dgewbjaren5ke"]
+
+[ext_resource type="Script" path="res://runtime/setup/player.rz" id="1_i3rpo"]
+[ext_resource type="Script" path="res://runtime/setup/hello_world.rz" id="2_4qolw"]
+
+[node name="setup" type="Node" unique_id=943669157]
+
+[node name="player" type="CharacterBody2D" parent="." unique_id=1433591941]
+script = ExtResource("1_i3rpo")
+
+[node name="hello_world" type="Node" parent="." unique_id=1473901590]
+script = ExtResource("2_4qolw")

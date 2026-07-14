@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d1dipqwui21kv"]
+
+[ext_resource type="Script" path="res://runtime/constructors/object_free.rz" id="1_cwlqt"]
+[ext_resource type="Script" path="res://runtime/constructors/constructor_new.rz" id="2_bgh3o"]
+[ext_resource type="Script" path="res://runtime/constructors/builder_constructor.rz" id="3_t1rna"]
+
+[node name="constructors" type="Node" unique_id=2038124431]
+
+[node name="object_free" type="Node" parent="." unique_id=98669164]
+script = ExtResource("1_cwlqt")
+
+[node name="constructor_new" type="Node" parent="." unique_id=1083881701]
+script = ExtResource("2_bgh3o")
+
+[node name="builder_constructor" type="Node" parent="." unique_id=1050927828]
+script = ExtResource("3_t1rna")

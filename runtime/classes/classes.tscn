@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cpqkuhk4ybf4p"]
+
+[ext_resource type="Script" path="res://runtime/classes/inner_class.rz" id="1_syixk"]
+[ext_resource type="Script" path="res://runtime/classes/enemy_stub.rz" id="2_kixu0"]
+[ext_resource type="Script" path="res://runtime/classes/classes.rz" id="3_nr7v3"]
+
+[node name="classes" type="Node" unique_id=709542653]
+
+[node name="inner_class" type="Node" parent="." unique_id=1699236139]
+script = ExtResource("1_syixk")
+
+[node name="enemy_stub" type="Node" parent="." unique_id=1038277976]
+script = ExtResource("2_kixu0")
+
+[node name="classes" type="Node" parent="." unique_id=607637532]
+script = ExtResource("3_nr7v3")

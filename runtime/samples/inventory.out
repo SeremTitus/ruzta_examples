@@ -1,0 +1,5 @@
+RZTEST_OK
+~~ WARNING at line 6: (SHADOWED_VARIABLE_BASE_CLASS) The local function parameter "name" is shadowing an already-declared property in the base class "Node".
+sword added
+shield added
+coins: 2

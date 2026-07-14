@@ -1,0 +1,13 @@
+extends Node
+
+class Projectile2:
+	var speed := 300.0
+
+func _ready() -> void:
+	test()
+
+func test() -> void:
+	var projectile := Projectile2.new()
+	var marker := Node2D.new()
+	print(projectile.speed)
+	marker.free()

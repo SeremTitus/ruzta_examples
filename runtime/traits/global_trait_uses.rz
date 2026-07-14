@@ -1,0 +1,15 @@
+extends Node
+
+class Actor extends Node:
+	uses ActorTrait
+
+	func _init():
+		name = "Main Actor"
+
+func test() -> void:
+	var actor := Actor.new()
+	print(actor.actor_name())
+	actor.free()
+	
+func _ready():
+	test()

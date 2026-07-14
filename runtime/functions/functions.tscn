@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cxxworqooh7om"]
+
+[ext_resource type="Script" path="res://runtime/functions/variadic.rz" id="1_qxq04"]
+[ext_resource type="Script" path="res://runtime/functions/properties.rz" id="2_4rsf3"]
+[ext_resource type="Script" path="res://runtime/functions/named_arguments.rz" id="3_drwbk"]
+[ext_resource type="Script" path="res://runtime/functions/lambdas.rz" id="4_b5v02"]
+[ext_resource type="Script" path="res://runtime/functions/function_overloading.rz" id="5_c3q7t"]
+[ext_resource type="Script" path="res://runtime/functions/functions.rz" id="6_j36o4"]
+
+[node name="functions" type="Node" unique_id=434731587]
+
+[node name="variadic" type="Node" parent="." unique_id=1528377806]
+script = ExtResource("1_qxq04")
+
+[node name="properties" type="Node" parent="." unique_id=996492750]
+script = ExtResource("2_4rsf3")
+
+[node name="named_arguments" type="Node" parent="." unique_id=2012074194]
+script = ExtResource("3_drwbk")
+
+[node name="lambdas" type="Node" parent="." unique_id=2090658053]
+script = ExtResource("4_b5v02")
+
+[node name="function_overloading" type="Node" parent="." unique_id=706015258]
+script = ExtResource("5_c3q7t")
+
+[node name="functions" type="Node" parent="." unique_id=1814270424]
+script = ExtResource("6_j36o4")

@@ -1,0 +1,24 @@
+extends Node
+
+class Tool:
+	func _init(id: String) -> void:
+		print("string init:", id)
+
+	func _init(id: int) -> void:
+		print("int init:", id)
+
+	static func pick(value: int) -> String:
+		return "int"
+
+	static func pick(value: String) -> String:
+		return "string"
+
+func _ready() -> void:
+	test()
+
+func test() -> void:
+	var a := Tool.new("x")
+	var b := Tool.new(3)
+	print(Tool.pick(7))
+	var picker := Tool.pick
+	print(picker.call("ok"))
